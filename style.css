@@ -1,0 +1,42 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1551;
+    height: 98;
+    padding: 0px 70px;
+    align-items: center;
+}
+
+.logo {
+    width: 134;
+    height: 44;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 363;
+    height: 26;
+    list-style: none;
+    gap: 24px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgba(87, 87, 87, 1);
+}
+
+ul li a :hover {
+    color: black;
+}
+
+button {
+    align-items: center;
+    padding: 10px 25px;
+    background-color: rgba(29, 78, 216, 1);
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
