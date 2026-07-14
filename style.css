@@ -17,7 +17,7 @@
         align-items: center;
     }
     
-    ul {
+    .nav-links ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -27,12 +27,12 @@
         gap: 24px;
     }
     
-    ul li a {
+    .nav-links ul li a {
         text-decoration: none;
         color: rgba(87, 87, 87, 1);
     }
     
-    ul li a :hover {
+    .nav-links ul li a :hover {
         color: black;
     }
     
