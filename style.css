@@ -1,239 +1,334 @@
-    * {
-        font-family: 'Inter', sans-serif;
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-    }
-    
-    nav {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        height: 75px;
-        padding: 0px 70px;
-        align-items: center;
-    }
-    
-    .logo {
-        width: 134px;
-        height: 44px;
-        align-items: center;
-    }
-    
-    .nav-links ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 363px;
-        height: 26px;
-        list-style: none;
-        gap: 24px;
-    }
-    
-    .nav-links ul li a {
-        text-decoration: none;
-        color: rgba(87, 87, 87, 1);
-    }
-    
-    .nav-links ul li a :hover {
-        color: black;
-    }
-    
-    .button {
-        align-items: center;
-        padding: 15px 40px;
-        background-color: rgba(29, 78, 216, 1);
-        color: white;
-        border-radius: 10px;
-        border: none;
-        font-weight: 700;
-        font-size: 16px;
-    }
-    
-    .hero {
-        background-image: linear-gradient( to right, rgba(0, 0, 0, 0.8) 50%, transparent 70%), url('./assets/banner.jpg');
-        width: 100%;
-        height: 90vh;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .hero-content {
-        color: white;
-        text-align: center;
-        display: grid;
-    }
-    
-    .hero-content button {
-        width: 25%;
-        margin-left: 40%;
-        padding: 25px 35px;
-        transform: translateY(140px);
-        font-size: larger;
-    }
-    
-    .hero-content h1 {
-        font-weight: bold;
-        font-size: 4.5em;
-        font-family: 'Inter', sans-serif;
-        transform: translateY(-150px);
-    }
-    
-    .hero-content p {
-        font-size: 1.3em;
-        font-family: 'Inter', sans-serif;
-        transform: translateY(-150px);
-    }
-    
-    .SpeakerSection {
-        width: 100%;
-        height: 1400px;
-    }
-    
-    .SpeakerSection h1 {
-        padding: 60px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 3em;
-        font-family: 'Inter', sans-serif;
-    }
-    
-    .Speakers-card {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
-        padding: 0px 80px;
-        height: 1030px;
-    }
-    
-    .card {
-        background: white;
-        border: 1px solid #ddd;
-        overflow: hidden;
-        border-radius: 10px;
-    }
-    
-    .card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
-    }
-    
-    .card img {
-        width: 100%;
-        object-fit: cover;
-    }
-    
-    .card h6 {
-        color: #275dff;
-        font-size: .9em;
-        font-weight: bold;
-        letter-spacing: 1px;
-        padding: 08px 20px;
-    }
-    
-    .card h3 {
-        font-size: 2em;
-        padding: 08px 20px;
-    }
-    
-    .card p {
-        color: #666;
-        font-size: 1.2em;
-        padding: 08px 20px;
-    }
-    
-    .PricingSection {
-        width: 100%;
-        height: 90vh;
-    }
-    
-    .Pricing-title {
-        text-align: center;
-        font-weight: bold;
-        font-size: 3em;
-    }
-    
-    .PricingSection p {
-        color: #666;
-        font-size: 0.9em;
-        padding: 20px;
-        text-align: center;
-    }
-    
-    .pricing-card {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 50px;
-        padding: 30px 160px;
-        /* height: 200px; */
-    }
-    
-    .cards {
-        background: white;
-        border: 1px solid #ddd;
-        overflow: hidden;
-        border-radius: 10px;
-        height: 430px;
-        padding: 20px 30px;
-    }
-    
-    .cards:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
-    }
-    
-    .cards h5,
-    span {
-        color: #666;
-        font-size: 1em;
-        opacity: 0.8;
-        padding: 0px;
-    }
-    
-    .cards h1 {
-        font-weight: bold;
-        font-size: 3em;
-    }
-    
-    .cards hr {
-        opacity: .3;
-        margin: 25px 0px;
-    }
-    
-    .cards ul {
-        margin: 10px 0px;
-        padding: 0px 20px;
-    }
-    
-    .cards ul li {
-        font-size: 0.9em;
-        color: #444;
-        line-height: 1.9;
-    }
-    
-    .cards ul li::marker {
-        color: #2f66ff;
-        font-size: 1.2em;
-    }
-    
-    .standard-btn {
-        width: 100%;
-        height: 40px;
-        background: transparent;
-        color: #2f66ff;
-        border: 2px solid #2048b6;
-        border-radius: 5px;
-        font-size: 1em;
-        font-weight: 700;
-        cursor: pointer;
-    }
-    
-    .standard-btn:hover {
-        background: #2f66ff;
-        color: #fff;
-    }
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+    padding: 0px 70px;
+    align-items: center;
+}
+
+.logo {
+    width: 134px;
+    height: 44px;
+    align-items: center;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 363px;
+    height: 26px;
+    list-style: none;
+    gap: 24px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: rgba(87, 87, 87, 1);
+}
+
+.nav-links ul li a :hover {
+    color: black;
+}
+
+.button {
+    align-items: center;
+    padding: 15px 40px;
+    background-color: rgba(29, 78, 216, 1);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: navy;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+}
+
+.hero {
+    background-image: linear-gradient( to right, rgba(0, 0, 0, 0.8) 50%, transparent 70%), url('./assets/banner.jpg');
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    text-align: center;
+    display: grid;
+}
+
+.hero-content button {
+    width: 25%;
+    margin-left: 40%;
+    padding: 25px 35px;
+    transform: translateY(140px);
+    font-size: larger;
+}
+
+.hero-content h1 {
+    font-weight: bold;
+    font-size: 4.5em;
+    font-family: 'Inter', sans-serif;
+    transform: translateY(-150px);
+}
+
+.hero-content p {
+    font-size: 1.3em;
+    font-family: 'Inter', sans-serif;
+    transform: translateY(-150px);
+}
+
+.SpeakerSection {
+    width: 100%;
+    height: 1400px;
+}
+
+.SpeakerSection h1 {
+    padding: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    font-family: 'Inter', sans-serif;
+}
+
+.Speakers-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 0px 80px;
+    height: 1030px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card h6 {
+    color: #275dff;
+    font-size: .9em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 08px 20px;
+}
+
+.card h3 {
+    font-size: 2em;
+    padding: 08px 20px;
+}
+
+.card p {
+    color: #666;
+    font-size: 1.2em;
+    padding: 08px 20px;
+}
+
+.PricingSection {
+    width: 100%;
+    height: 90vh;
+}
+
+.Pricing-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.PricingSection p {
+    color: #666;
+    font-size: 0.9em;
+    padding: 20px;
+    text-align: center;
+}
+
+.pricing-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 30px 160px;
+    height: 100vh;
+}
+
+.cards {
+    background: white;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 430px;
+    padding: 20px 30px;
+}
+
+.cards:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+}
+
+.cards h5,
+span {
+    color: #666;
+    font-size: 1em;
+    opacity: 0.8;
+    padding: 0px;
+}
+
+.cards h1 {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.cards hr {
+    opacity: .3;
+    margin: 25px 0px;
+}
+
+.cards ul {
+    margin: 10px 0px;
+    padding: 0px 20px;
+}
+
+.cards ul li {
+    font-size: 0.9em;
+    color: #444;
+    line-height: 1.9;
+}
+
+.cards ul li::marker {
+    color: #2f66ff;
+    font-size: 1.2em;
+}
+
+.standard-btn {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    color: #2f66ff;
+    border: 2px solid #2048b6;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.standard-btn:hover {
+    background: #2f66ff;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+}
+
+#team-card {
+    background-color: #F8F9FB;
+}
+
+.team-btn {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    color: #0D1B2A;
+    border: 2px solid #0D1B2A;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.team-btn:hover {
+    background: #0D1B2A;
+    color: #F8F9FB;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+}
+
+.card-active {
+    background: linear-gradient(135deg, #0A0A0A, #111827, #2563EB);
+    border: 1px solid #111827;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 430px;
+    padding: 20px 30px;
+}
+
+.card-active:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(5, 0, 0, .5);
+}
+
+.card-active h5 {
+    color: #93C5FD;
+    font-size: 1em;
+    padding: 0px;
+}
+
+.card-active h1 {
+    font-weight: bold;
+    font-size: 3em;
+    color: white;
+}
+
+.card-active hr {
+    opacity: .3;
+    margin: 25px 0px;
+}
+
+.card-active ul {
+    margin: 10px 0px;
+    padding: 0px 20px;
+}
+
+.card-active ul li {
+    font-size: 0.9em;
+    color: #FFFFFF;
+    line-height: 1.9;
+}
+
+.card-active ul li::marker {
+    color: #2f66ff;
+    font-size: 1.2em;
+}
+
+.card-active button {
+    width: 100%;
+    height: 40px;
+    background: #2563EB;
+    color: #FFFFFF;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card-active button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+}
