@@ -32,32 +32,35 @@ nav {
 
 .nav-links ul li a {
     text-decoration: none;
-    color: rgba(87, 87, 87, 1);
+    color: #575757;
+    transition: .4s;
 }
 
-.nav-links ul li a :hover {
+.nav-links ul li a:hover {
     color: black;
 }
 
 .button {
     align-items: center;
     padding: 15px 40px;
-    background-color: rgba(29, 78, 216, 1);
+    background-color: #1d4ed8;
     color: white;
     border-radius: 10px;
     border: none;
     font-weight: 700;
     font-size: 16px;
     cursor: pointer;
+    transition: .4s;
 }
 
 .button:hover {
     background-color: navy;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px #00000026;
 }
 
 .hero {
-    background-image: linear-gradient( to right, rgba(0, 0, 0, 0.8) 50%, transparent 70%), url('./assets/banner.jpg');
+    background-image: linear-gradient( 30deg, #000000cc 40%, transparent 60%), url('./assets/banner.jpg');
     width: 100%;
     height: 90vh;
     background-size: cover;
@@ -67,33 +70,22 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.hero-content {
     color: white;
-    text-align: center;
-    display: grid;
 }
 
 .hero-content button {
-    width: 25%;
-    margin-left: 40%;
     padding: 25px 35px;
-    transform: translateY(140px);
+    margin: 240px 0px 0px 0px;
     font-size: larger;
 }
 
 .hero-content h1 {
     font-weight: bold;
     font-size: 4.5em;
-    font-family: 'Inter', sans-serif;
-    transform: translateY(-150px);
 }
 
 .hero-content p {
     font-size: 1.3em;
-    font-family: 'Inter', sans-serif;
-    transform: translateY(-150px);
 }
 
 .SpeakerSection {
@@ -106,7 +98,6 @@ nav {
     text-align: center;
     font-weight: bold;
     font-size: 3em;
-    font-family: 'Inter', sans-serif;
 }
 
 .Speakers-card {
@@ -114,7 +105,7 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     padding: 0px 80px;
-    height: 1030px;
+    height: 150vh;
 }
 
 .card {
@@ -122,11 +113,12 @@ nav {
     border: 1px solid #ddd;
     overflow: hidden;
     border-radius: 10px;
+    transition: .4s;
 }
 
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+    box-shadow: 0 10px 20px #00000026;
 }
 
 .card img {
@@ -184,13 +176,14 @@ nav {
     border: 1px solid #ddd;
     overflow: hidden;
     border-radius: 10px;
-    height: 430px;
-    padding: 20px 30px;
+    height: 65vh;
+    padding: 20px 25px;
+    transition: .4s;
 }
 
 .cards:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+    box-shadow: 0 10px 20px #00000026;
 }
 
 .cards h5,
@@ -237,13 +230,14 @@ span {
     font-size: 1em;
     font-weight: 700;
     cursor: pointer;
+    transition: .4s;
 }
 
 .standard-btn:hover {
     background: #2f66ff;
     color: #fff;
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+    box-shadow: 0 10px 20px #00000026;
 }
 
 #team-card {
@@ -260,6 +254,7 @@ span {
     font-size: 1em;
     font-weight: 700;
     cursor: pointer;
+    transition: .4s;
 }
 
 .team-btn:hover {
@@ -274,13 +269,14 @@ span {
     border: 1px solid #111827;
     overflow: hidden;
     border-radius: 10px;
-    height: 430px;
+    height: 65vh;
     padding: 20px 30px;
+    transition: .4s;
 }
 
 .card-active:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(5, 0, 0, .5);
+    box-shadow: 0 10px 20px #05000080;
 }
 
 .card-active h5 {
@@ -326,11 +322,12 @@ span {
     font-size: 1em;
     font-weight: 700;
     cursor: pointer;
+    transition: .4s;
 }
 
 .card-active button:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+    box-shadow: 0 10px 20px #00000026;
 }
 
 .experience {
@@ -376,7 +373,7 @@ span {
     background: #101c2d;
     overflow: hidden;
     transition: .4s;
-    border: 1px solid rgba(255, 255, 255, .08);
+    border: 1px solid #ffffff14;
 }
 
 .experience-card::before {
@@ -391,7 +388,7 @@ span {
 
 .experience-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 45px rgba(37, 99, 235, .25);
+    box-shadow: 0 20px 45px rgba(36, 99, 235, 0.251);
 }
 
 .experience-number {
@@ -439,16 +436,17 @@ span {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    border: 1px solid rgba(255, 255, 255, .15);
+    border: 1px solid #ffffff26;
     border-radius: 30%;
     color: #fff;
     font-size: 1.2em;
     cursor: pointer;
+    transition: .4s;
 }
 
 .social-links a:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+    box-shadow: 0 10px 20px #00000026;
 }
 
 .footer hr {
